@@ -1,0 +1,609 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.3.2",
+  "deps": {
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.1",
+    "@faker-js/faker": "^7.6.0",
+    "@stripe/react-stripe-js": "^2.9.0",
+    "@stripe/stripe-js": "^1.54.2",
+    "axios": "^1.13.5",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.1",
+    "mongoose": "^7.8.9",
+    "pino": "^8.21.0",
+    "pino-http": "^8.6.1",
+    "pino-pretty": "^10.3.1",
+    "prisma": "^4.16.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.30.3",
+    "redis": "^4.7.1",
+    "sass": "^1.97.3",
+    "stripe": "^12.18.0",
+    "tslib": "^2.8.1",
+    "validator.js": "^2.0.4",
+    "@emotion/babel-plugin": "11.13.5",
+    "@nx/cypress": "17.3.2",
+    "@nx/esbuild": "17.3.2",
+    "@nx/eslint": "17.3.2",
+    "@nx/eslint-plugin": "17.3.2",
+    "@nx/jest": "17.3.2",
+    "@nx/js": "17.3.2",
+    "@nx/node": "17.3.2",
+    "@nx/react": "17.3.2",
+    "@nx/vite": "17.3.2",
+    "@nx/web": "17.3.2",
+    "@nx/webpack": "17.3.2",
+    "@nx/workspace": "17.3.2",
+    "@testing-library/react": "14.3.1",
+    "@types/cors": "^2.8.19",
+    "@types/express": "4.17.25",
+    "@types/jest": "^29.5.14",
+    "@types/node": "18.19.130",
+    "@types/react": "18.3.28",
+    "@types/react-dom": "18.3.7",
+    "@types/react-router-dom": "5.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "@vitest/coverage-c8": "~0.33.0",
+    "@vitest/ui": "^0.34.7",
+    "concurrently": "^8.2.2",
+    "cypress": "^12.17.4",
+    "esbuild": "^0.27.3",
+    "eslint": "~8.57.1",
+    "eslint-config-prettier": "8.10.2",
+    "eslint-plugin-cypress": "^2.15.2",
+    "eslint-plugin-import": "2.32.0",
+    "eslint-plugin-jsx-a11y": "6.10.2",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-react-hooks": "4.6.2",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-node": "^29.7.0",
+    "jsdom": "~20.0.3",
+    "nx": "17.3.2",
+    "prettier": "^2.8.8",
+    "react-test-renderer": "18.3.1",
+    "ts-jest": "^29.4.6",
+    "ts-node": "10.9.2",
+    "typescript": "5.3.3",
+    "vite": "^4.5.14",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "^0.34.6"
+  },
+  "pathMappings": {
+    "@checkout-stripe/interface": [
+      "libs/interface/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "README.md",
+        "hash": "13751062452218214436"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "6961922456648142148"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "8185216406198449346"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "2950215254536237782"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "8865097869854018350"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "2057839533310938794"
+      },
+      {
+        "file": "tools/concurrent.mjs",
+        "hash": "7368707950257779174"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "14985366168530909727"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "8212775959195919275"
+      },
+      {
+        "file": "package.json",
+        "hash": "1508749519790884046"
+      },
+      {
+        "file": "nx.json",
+        "hash": "3380095343008026051"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "18085261541358865259"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "16088922570277978783"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "4637156562308165301"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "libs/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      }
+    ],
+    "projectFileMap": {
+      "interface": [
+        {
+          "file": "libs/interface/.eslintrc.json",
+          "hash": "13800677001662881425"
+        },
+        {
+          "file": "libs/interface/README.md",
+          "hash": "10628376004714179608"
+        },
+        {
+          "file": "libs/interface/project.json",
+          "hash": "14488119197041708094"
+        },
+        {
+          "file": "libs/interface/src/index.ts",
+          "hash": "9115206220203586773"
+        },
+        {
+          "file": "libs/interface/src/lib/interface.ts",
+          "hash": "17981351937711825502"
+        },
+        {
+          "file": "libs/interface/tsconfig.json",
+          "hash": "634795086719220447"
+        },
+        {
+          "file": "libs/interface/tsconfig.lib.json",
+          "hash": "3632393694954060084"
+        }
+      ],
+      "checkout": [
+        {
+          "file": "apps/checkout/.eslintrc.json",
+          "hash": "10075191527724852300"
+        },
+        {
+          "file": "apps/checkout/index.html",
+          "hash": "12912546291612615934"
+        },
+        {
+          "file": "apps/checkout/project.json",
+          "hash": "7576446135218903358"
+        },
+        {
+          "file": "apps/checkout/proxy.conf.json",
+          "hash": "921346248685484896"
+        },
+        {
+          "file": "apps/checkout/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/checkout/src/CheckoutApp.tsx",
+          "hash": "1002328280253975932",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/api/stripeApi.ts",
+          "hash": "12551530238416105451",
+          "deps": [
+            "interface",
+            "npm:@stripe/stripe-js",
+            "npm:axios",
+            "npm:stripe"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/helpers/index.ts",
+          "hash": "4945334483633259829",
+          "deps": [
+            "npm:@faker-js/faker"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/hooks/useLoadPrices.ts",
+          "hash": "17796457843876883438",
+          "deps": [
+            "interface",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/hooks/useStripeForm.ts",
+          "hash": "2858085556290714119",
+          "deps": [
+            "interface",
+            "npm:@stripe/react-stripe-js",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/main.tsx",
+          "hash": "3791235848473800505",
+          "deps": [
+            "npm:@stripe/react-stripe-js",
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/models/interface.ts",
+          "hash": "10579627396093553360",
+          "deps": [
+            "interface",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/router/AppRouter.tsx",
+          "hash": "5744792536024171213",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/styles/normalize.scss",
+          "hash": "12908855636490859172"
+        },
+        {
+          "file": "apps/checkout/src/styles/styles.scss",
+          "hash": "6717994273635198250"
+        },
+        {
+          "file": "apps/checkout/src/test/CheckoutApp.spec.tsx",
+          "hash": "5158360205095569231",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/ui/Layout/Layout.tsx",
+          "hash": "6523077246056458066",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/ui/Layout/components/GlobalStyles/CssModernReset.ts",
+          "hash": "17172203563907128757",
+          "deps": [
+            "npm:@emotion/react"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/ui/Layout/components/GlobalStyles/CssScaffolding.ts",
+          "hash": "12863961365095809055",
+          "deps": [
+            "npm:@emotion/react"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/ui/Layout/components/GlobalStyles/GlobalStyles.tsx",
+          "hash": "2603600523349145643",
+          "deps": [
+            "npm:@emotion/react"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/ui/Layout/components/GlobalStyles/index.ts",
+          "hash": "16568835241396733141"
+        },
+        {
+          "file": "apps/checkout/src/ui/Layout/components/Header/Header.tsx",
+          "hash": "2122965440640819758",
+          "deps": [
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/ui/Layout/components/Header/index.ts",
+          "hash": "13016683133917914439"
+        },
+        {
+          "file": "apps/checkout/src/ui/Layout/index.ts",
+          "hash": "9792172175316716656"
+        },
+        {
+          "file": "apps/checkout/src/ui/Loading/Loading.tsx",
+          "hash": "5970209959810406310"
+        },
+        {
+          "file": "apps/checkout/src/ui/Loading/LoadingStyles.ts",
+          "hash": "1203131272317584963",
+          "deps": [
+            "npm:@emotion/styled"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/ui/Loading/index.ts",
+          "hash": "17647368464428151377"
+        },
+        {
+          "file": "apps/checkout/src/views/checkout/StripeCheckout.tsx",
+          "hash": "707591199487362140",
+          "deps": [
+            "npm:@faker-js/faker"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/views/customer/CustomerDashboard.tsx",
+          "hash": "13991009484450490748",
+          "deps": [
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/views/elements/SubscriptionFormFreeTrial.tsx",
+          "hash": "12786532297246672925"
+        },
+        {
+          "file": "apps/checkout/src/views/elements/SubscriptionFormNoTrial.tsx",
+          "hash": "10078187563559319036"
+        },
+        {
+          "file": "apps/checkout/src/views/elements/components/ButtonSubmit.tsx",
+          "hash": "7221407166576084923",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/views/elements/components/PlanSelection.tsx",
+          "hash": "9628031859951369165",
+          "deps": [
+            "interface"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/views/elements/components/SubscriptionForm.tsx",
+          "hash": "16164993227991435258",
+          "deps": [
+            "npm:@stripe/react-stripe-js",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/views/elements/components/SubscriptionFormLayout.tsx",
+          "hash": "4387602801024624149",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/views/elements/components/TestCards.tsx",
+          "hash": "2966349916928467543"
+        },
+        {
+          "file": "apps/checkout/src/views/elements/components/WithSubscription.tsx",
+          "hash": "60524614054533736",
+          "deps": [
+            "interface",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/views/home/HomeView.tsx",
+          "hash": "17689504216535713103",
+          "deps": [
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/checkout/src/views/home/index.ts",
+          "hash": "8630654638291471247"
+        },
+        {
+          "file": "apps/checkout/src/views/subscription-success/SubscriptionSuccess.tsx",
+          "hash": "17048279290585222554",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:stripe"
+          ]
+        },
+        {
+          "file": "apps/checkout/tsconfig.app.json",
+          "hash": "15470670433496661247"
+        },
+        {
+          "file": "apps/checkout/tsconfig.json",
+          "hash": "17994410774201614780"
+        },
+        {
+          "file": "apps/checkout/tsconfig.spec.json",
+          "hash": "10107240882214166991"
+        },
+        {
+          "file": "apps/checkout/vite.config.ts",
+          "hash": "3233097908939760984",
+          "deps": [
+            "npm:@vitejs/plugin-react",
+            "npm:vite",
+            "npm:vite-tsconfig-paths"
+          ]
+        }
+      ],
+      "checkout-e2e": [
+        {
+          "file": "apps/checkout-e2e/.eslintrc.json",
+          "hash": "14060216369337943343"
+        },
+        {
+          "file": "apps/checkout-e2e/cypress.config.ts",
+          "hash": "1963293188179110552",
+          "deps": [
+            "npm:cypress",
+            "npm:@nrwl/cypress"
+          ]
+        },
+        {
+          "file": "apps/checkout-e2e/project.json",
+          "hash": "9285753833321044370"
+        },
+        {
+          "file": "apps/checkout-e2e/src/e2e/app.cy.ts",
+          "hash": "15334271087594661162"
+        },
+        {
+          "file": "apps/checkout-e2e/src/fixtures/example.json",
+          "hash": "11614668686582597233"
+        },
+        {
+          "file": "apps/checkout-e2e/src/support/app.po.ts",
+          "hash": "8745190119496361318"
+        },
+        {
+          "file": "apps/checkout-e2e/src/support/commands.ts",
+          "hash": "1655890540858415489"
+        },
+        {
+          "file": "apps/checkout-e2e/src/support/e2e.ts",
+          "hash": "17781054987785404431"
+        },
+        {
+          "file": "apps/checkout-e2e/tsconfig.json",
+          "hash": "1788248097864730386"
+        }
+      ],
+      "api": [
+        {
+          "file": "apps/api/.eslintrc.json",
+          "hash": "13800677001662881425"
+        },
+        {
+          "file": "apps/api/env.sample",
+          "hash": "8302660344514900380"
+        },
+        {
+          "file": "apps/api/jest.config.ts",
+          "hash": "9483968714649439783"
+        },
+        {
+          "file": "apps/api/project.json",
+          "hash": "6695999951796012655"
+        },
+        {
+          "file": "apps/api/src/app.ts",
+          "hash": "8654972744293538583",
+          "deps": [
+            "npm:cors",
+            "npm:express"
+          ]
+        },
+        {
+          "file": "apps/api/src/config.ts",
+          "hash": "6938073503166148662",
+          "deps": [
+            "npm:dotenv"
+          ]
+        },
+        {
+          "file": "apps/api/src/lib/error/errorHandler.ts",
+          "hash": "17284003013450101053",
+          "deps": [
+            "npm:express"
+          ]
+        },
+        {
+          "file": "apps/api/src/lib/index.ts",
+          "hash": "14094426950039812687"
+        },
+        {
+          "file": "apps/api/src/lib/logger/logger.ts",
+          "hash": "10926133423742036633",
+          "deps": [
+            "npm:pino"
+          ]
+        },
+        {
+          "file": "apps/api/src/main.ts",
+          "hash": "5069800156462399296",
+          "deps": [
+            "npm:http"
+          ]
+        },
+        {
+          "file": "apps/api/src/routes/index.ts",
+          "hash": "1784712381923605457",
+          "deps": [
+            "npm:express"
+          ]
+        },
+        {
+          "file": "apps/api/src/routes/stripe/StripeEvents.ts",
+          "hash": "17664384031222665587",
+          "deps": [
+            "npm:stripe"
+          ]
+        },
+        {
+          "file": "apps/api/src/routes/stripe/stripeRoute.ts",
+          "hash": "933920096625174623",
+          "deps": [
+            "npm:express",
+            "npm:stripe"
+          ]
+        },
+        {
+          "file": "apps/api/src/routes/stripe/stripeServices.ts",
+          "hash": "16976037497256099733",
+          "deps": [
+            "npm:express",
+            "npm:stripe"
+          ]
+        },
+        {
+          "file": "apps/api/tsconfig.app.json",
+          "hash": "1558509971940032459"
+        },
+        {
+          "file": "apps/api/tsconfig.json",
+          "hash": "3490524966360018312"
+        },
+        {
+          "file": "apps/api/tsconfig.spec.json",
+          "hash": "11550347367511341917"
+        }
+      ]
+    }
+  }
+}
