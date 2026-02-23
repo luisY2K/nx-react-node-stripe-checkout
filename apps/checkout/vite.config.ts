@@ -20,6 +20,7 @@ export default defineConfig({
     react(),
     viteTsConfigPaths({
       root: "../../",
+      ignoreConfigErrors: true,
     }),
   ],
 
