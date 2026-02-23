@@ -1,5 +1,5 @@
-import '../styles/normalize.scss';
-import '../styles/styles.scss';
+import '../src/styles/normalize.scss';
+import '../src/styles/styles.scss';
 
 import { Suspense } from 'react';
 import { BrowserRouter } from 'react-router-dom';

@@ -2,6 +2,10 @@
 
 .env
 
+# AI
+.claude
+
+
 # compiled output
 dist
 tmp
