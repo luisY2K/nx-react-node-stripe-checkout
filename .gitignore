@@ -6,6 +6,9 @@
 .claude
 
 
+# Nx
+.nx
+
 # compiled output
 dist
 tmp
