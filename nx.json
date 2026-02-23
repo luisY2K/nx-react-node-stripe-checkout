@@ -3,10 +3,9 @@
   "npmScope": "checkout-stripe",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/nx-cloud",
+      "runner": "nx/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"],
-        "accessToken": "NDA1Nzg2OTMtOTdhNS00ZDZlLThjNzMtNTRmMjhkMDlkMGZmfHJlYWQtd3JpdGU="
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
       }
     }
   },
