@@ -5,9 +5,7 @@ import { config } from '../../config';
 import { logger } from '../../lib';
 import { stripeEvents } from './StripeEvents';
 
-const stripe = new Stripe(config.stripe.secret_key, {
-  apiVersion: '2022-11-15',
-});
+const stripe = new Stripe(config.stripe.secret_key);
 
 stripeEvents.init(stripe);
 
@@ -227,8 +225,7 @@ export const createNoTrialSubscription = async (
     logger.debug('[SUBSCRIPTION]', subscription);
 
     const clientSecret = (
-      (subscription.latest_invoice as Stripe.Invoice)
-        .payment_intent as Stripe.PaymentIntent
+      (subscription.latest_invoice as any).payment_intent as Stripe.PaymentIntent
     ).client_secret;
 
     res.send({
